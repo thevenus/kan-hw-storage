@@ -1,0 +1,47 @@
+Starting at Thu Feb  6 10:36:49 PM CET 2025
+Running on hosts: cg18
+Running on 1 nodes.
+Running on 1 processors.
+SLURM JobID 1085433 processors.
+Node has 32 processors.
+Node has  total memory.
+Node has 5300 memory per cpu.
+Current working directory is /lunarc/nobackup/projects/lu2024-17-38/fu6315ma/training/mnist
+Current path is /lunarc/nobackup/projects/lu2024-17-38/fu6315ma/.venv/bin:/sw/pkg/gfxlauncher:/home/fu6315ma/.vscode-server/cli/servers/Stable-cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/server/bin/remote-cli:/sw/pkg/gfxlauncher:/home/fu6315ma/.local/bin:/home/fu6315ma/bin:/sw/pkg/gfxlauncher:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:~/bin:.:/sw/pkg/lunarc/bin:/sw/pkg/slurm/local/bin:/opt/thinlinc/bin:/opt/thinlinc/sbin:~/bin:.:/sw/pkg/lunarc/bin:/sw/pkg/slurm/local/bin:~/bin:.:/sw/pkg/lunarc/bin:/sw/pkg/slurm/local/bin
+2025-02-06 22:36:49: Training started (directory: /lunarc/nobackup/projects/lu2024-17-38/fu6315ma/training/mnist)\n
+cuda
+checkpoint directory created: ./model
+saving model version 0.0
+KAN model has 9994524 number of parameters
+Train:  torch.Size([60000, 784]) torch.Size([60000, 10])
+Test:  torch.Size([10000, 784]) torch.Size([10000, 10])
+description:   0%|                                                          | 0/500 [00:00<?, ?it/s]description:   0%|                                                          | 0/500 [00:03<?, ?it/s]
+Traceback (most recent call last):
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/training/mnist/kan_mnist.py", line 23, in <module>
+    train_data = ut.train_model(
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/training/utils.py", line 172, in train_model
+    loss = model.fit(dataset, opt=train_data['optimizer'], metrics=(train_acc, test_acc),
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/pykan_repo/kan/MultKAN.py", line 1555, in fit
+    self.update_grid(dataset['train_input'][train_id])
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/pykan_repo/kan/MultKAN.py", line 717, in update_grid
+    self.update_grid_from_samples(x)
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/pykan_repo/kan/MultKAN.py", line 710, in update_grid_from_samples
+    self.get_act(x)
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/pykan_repo/kan/MultKAN.py", line 2700, in get_act
+    self.forward(x)
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/pykan_repo/kan/MultKAN.py", line 803, in forward
+    x_numerical, preacts, postacts_numerical, postspline = self.act_fun[l](x)
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/.venv/lib64/python3.9/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/.venv/lib64/python3.9/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/pykan_repo/kan/KANLayer.py", line 157, in forward
+    y = coef2curve(x_eval=x, grid=self.grid, coef=self.coef, k=self.k)
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/pykan_repo/kan/spline.py", line 76, in coef2curve
+    y_eval = torch.einsum('ijk,jlk->ijl', b_splines, coef.to(b_splines.device))
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/.venv/lib64/python3.9/site-packages/torch/functional.py", line 402, in einsum
+    return _VF.einsum(equation, operands)  # type: ignore[attr-defined]
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 274.95 GiB. GPU 0 has a total capacity of 39.50 GiB of which 36.42 GiB is free. Including non-PyTorch memory, this process has 3.06 GiB memory in use. Of the allocated memory 2.39 GiB is allocated by PyTorch, and 203.15 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-02-06 22:37:38: Training done
+
+2025-02-06 22:37:38: END OF SCRIPT REACHED

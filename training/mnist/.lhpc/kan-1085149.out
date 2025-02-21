@@ -1,0 +1,25 @@
+Starting at Thu Feb  6 05:09:17 PM CET 2025
+Running on hosts: cg18
+Running on 1 nodes.
+Running on 1 processors.
+SLURM JobID 1085149 processors.
+Node has 32 processors.
+Node has  total memory.
+Node has 5300 memory per cpu.
+Current working directory is /lunarc/nobackup/projects/lu2024-17-38/fu6315ma/training/mnist
+Current path is /lunarc/nobackup/projects/lu2024-17-38/fu6315ma/.venv/bin:/sw/pkg/gfxlauncher:/home/fu6315ma/.vscode-server/cli/servers/Stable-cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/server/bin/remote-cli:/sw/pkg/gfxlauncher:/home/fu6315ma/.local/bin:/home/fu6315ma/bin:/sw/pkg/gfxlauncher:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:.:/sw/pkg/lunarc/bin:/sw/pkg/slurm/local/bin:/opt/thinlinc/bin:/opt/thinlinc/sbin:.:/sw/pkg/lunarc/bin:/sw/pkg/slurm/local/bin:.:/sw/pkg/lunarc/bin:/sw/pkg/slurm/local/bin
+2025-02-06 17:09:17: Training started (directory: /lunarc/nobackup/projects/lu2024-17-38/fu6315ma/training/mnist)\n
+cuda
+Train:  torch.Size([60000, 784]) torch.Size([60000, 10])
+Test:  torch.Size([10000, 784]) torch.Size([10000, 10])
+Traceback (most recent call last):
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/training/mnist/kan_mnist_hp_optim.py", line 82, in <module>
+    study = optuna.create_study(directions="maximize")
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/.venv/lib64/python3.9/site-packages/optuna/_convert_positional_args.py", line 83, in converter_wrapper
+    return func(**kwargs)  # type: ignore[call-arg]
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/.venv/lib64/python3.9/site-packages/optuna/study/study.py", line 1254, in create_study
+    raise ValueError(
+ValueError: Please set either 'minimize' or 'maximize' to direction. You can also set the corresponding `StudyDirection` member.
+2025-02-06 17:09:55: Training done
+
+2025-02-06 17:09:55: END OF SCRIPT REACHED

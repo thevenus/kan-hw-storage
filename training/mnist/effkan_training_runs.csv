@@ -1,0 +1,2 @@
+width,num_params,optimizer,steps,grid,k,lr,lambda,lambda_l1,lambda_entropy,train_loss,test_loss,train_acc,test_acc,loss_plot_path,acc_plot_path,params_path,loss_fn,weight_decay,lr_decay
+"[784, 16, 10]",25408,AdamW,10,1,1,0.001,,,,0.23921434581279755,0.19961455769695435,0.9270833730697632,0.9430379746835443,,,weights/eff_kan_2025-02-13_13-51-28_state.pth,CrossEntropyLoss(),0.0001,0.9

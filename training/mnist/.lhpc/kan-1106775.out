@@ -1,0 +1,15 @@
+Starting at Tue Feb 18 05:15:26 PM CET 2025
+Running on hosts: cg20
+Running on 1 nodes.
+Running on 1 processors.
+SLURM JobID 1106775 processors.
+Node has 32 processors.
+Node has  total memory.
+Node has 5300 memory per cpu.
+Current working directory is /lunarc/nobackup/projects/lu2024-17-38/fu6315ma/training/mnist
+Current path is /lunarc/nobackup/projects/lu2024-17-38/fu6315ma/.venv/bin:/sw/pkg/gfxlauncher:/home/fu6315ma/.vscode-server/cli/servers/Stable-cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/server/bin/remote-cli:/sw/pkg/gfxlauncher:/home/fu6315ma/.local/bin:/home/fu6315ma/bin:/sw/pkg/gfxlauncher:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:.:/sw/pkg/lunarc/bin:/sw/pkg/slurm/local/bin:/opt/thinlinc/bin:/opt/thinlinc/sbin:.:/sw/pkg/lunarc/bin:/sw/pkg/slurm/local/bin:/home/fu6315ma/.vscode-server/extensions/ms-python.debugpy-2025.0.1-linux-x64/bundled/scripts/noConfigScripts:.:/sw/pkg/lunarc/bin:/sw/pkg/slurm/local/bin
+2025-02-18 17:15:26: Script started (directory: /lunarc/nobackup/projects/lu2024-17-38/fu6315ma/training/mnist)\n
+python: can't open file '/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/training/mnist/../behavioral/effkan_lib_inf.py': [Errno 2] No such file or directory
+2025-02-18 17:15:26: Script done
+
+2025-02-18 17:15:26: END OF SCRIPT REACHED

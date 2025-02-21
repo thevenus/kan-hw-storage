@@ -1,0 +1,66 @@
+Starting at Thu Feb  6 10:16:07 PM CET 2025
+Running on hosts: cg18
+Running on 1 nodes.
+Running on 1 processors.
+SLURM JobID 1085362 processors.
+Node has 32 processors.
+Node has  total memory.
+Node has 5300 memory per cpu.
+Current working directory is /lunarc/nobackup/projects/lu2024-17-38/fu6315ma/training/mnist
+Current path is /lunarc/nobackup/projects/lu2024-17-38/fu6315ma/.venv/bin:/sw/pkg/gfxlauncher:/home/fu6315ma/.vscode-server/cli/servers/Stable-cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/server/bin/remote-cli:/sw/pkg/gfxlauncher:/home/fu6315ma/.local/bin:/home/fu6315ma/bin:/sw/pkg/gfxlauncher:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:~/bin:.:/sw/pkg/lunarc/bin:/sw/pkg/slurm/local/bin:/opt/thinlinc/bin:/opt/thinlinc/sbin:~/bin:.:/sw/pkg/lunarc/bin:/sw/pkg/slurm/local/bin:~/bin:.:/sw/pkg/lunarc/bin:/sw/pkg/slurm/local/bin
+2025-02-06 22:16:07: Training started (directory: /lunarc/nobackup/projects/lu2024-17-38/fu6315ma/training/mnist)\n
+cuda
+Train:  torch.Size([60000, 784]) torch.Size([60000, 10])
+Test:  torch.Size([10000, 784]) torch.Size([10000, 10])
+[I 2025-02-06 22:16:18,083] A new study created in memory with name: no-name-db3773e7-f0f3-40bd-b900-23442b388d16
+checkpoint directory created: ./model
+saving model version 0.0
+Trial 0: {'lr': 0.027707636401262108, 'lambda': 0.0007765084377522407, 'lambda_l1': 4, 'lambda_entropy': 2}
+description:   0%|                                                          | 0/500 [00:00<?, ?it/s]| train_loss: 1.52e+00 | test_loss: 1.52e+00 | reg: 5.78e+01 | :   0%|      | 0/500 [00:05<?, ?it/s]| train_loss: 1.52e+00 | test_loss: 1.52e+00 | reg: 5.78e+01 | :   0%| | 1/500 [00:05<46:16,  5.56s/| train_loss: 1.52e+00 | test_loss: 1.52e+00 | reg: 1.64e+01 | :   0%| | 1/500 [00:06<46:16,  5.56s/| train_loss: 1.52e+00 | test_loss: 1.52e+00 | reg: 1.64e+01 | :   0%| | 2/500 [00:06<23:44,  2.86s/| train_loss: 1.52e+00 | test_loss: 1.52e+00 | reg: 4.64e+01 | :   0%| | 2/500 [00:07<23:44,  2.86s/| train_loss: 1.52e+00 | test_loss: 1.52e+00 | reg: 4.64e+01 | :   1%| | 3/500 [00:07<16:32,  2.00s/| train_loss: 1.52e+00 | test_loss: 1.52e+00 | reg: 8.03e+01 | :   1%| | 3/500 [00:08<16:32,  2.00s/| train_loss: 1.52e+00 | test_loss: 1.52e+00 | reg: 8.03e+01 | :   1%| | 4/500 [00:08<13:09,  1.59s/| train_loss: 1.52e+00 | test_loss: 1.52e+00 | reg: 2.56e+01 | :   1%| | 4/500 [00:09<13:09,  1.59s/| train_loss: 1.52e+00 | test_loss: 1.52e+00 | reg: 2.56e+01 | :   1%| | 5/500 [00:09<11:16,  1.37s/| train_loss: nan | test_loss: nan | reg: nan | :   1%|▏            | 5/500 [00:11<11:16,  1.37s/it]| train_loss: nan | test_loss: nan | reg: nan | :   1%|▏            | 6/500 [00:11<12:50,  1.56s/it]| train_loss: nan | test_loss: nan | reg: nan | :   1%|▏            | 6/500 [00:12<12:50,  1.56s/it]| train_loss: nan | test_loss: nan | reg: nan | :   1%|▏            | 7/500 [00:12<11:04,  1.35s/it]| train_loss: nan | test_loss: nan | reg: nan | :   1%|▏            | 7/500 [00:13<11:04,  1.35s/it]| train_loss: nan | test_loss: nan | reg: nan | :   2%|▏            | 8/500 [00:13<09:56,  1.21s/it]| train_loss: nan | test_loss: nan | reg: nan | :   2%|▏            | 8/500 [00:14<09:56,  1.21s/it]| train_loss: nan | test_loss: nan | reg: nan | :   2%|▏            | 9/500 [00:14<09:11,  1.12s/it]| train_loss: nan | test_loss: nan | reg: nan | :   2%|▏            | 9/500 [00:15<09:11,  1.12s/it]| train_loss: nan | test_loss: nan | reg: nan | :   2%|▏           | 10/500 [00:15<08:38,  1.06s/it]| train_loss: nan | test_loss: nan | reg: nan | :   2%|▏           | 10/500 [00:16<08:38,  1.06s/it]| train_loss: nan | test_loss: nan | reg: nan | :   2%|▎           | 11/500 [00:16<10:24,  1.28s/it]| train_loss: nan | test_loss: nan | reg: nan | :   2%|▎           | 11/500 [00:17<10:24,  1.28s/it]| train_loss: nan | test_loss: nan | reg: nan | :   2%|▎           | 12/500 [00:17<09:29,  1.17s/it]| train_loss: nan | test_loss: nan | reg: nan | :   2%|▎           | 12/500 [00:18<09:29,  1.17s/it]| train_loss: nan | test_loss: nan | reg: nan | :   3%|▎           | 13/500 [00:18<08:52,  1.09s/it]| train_loss: nan | test_loss: nan | reg: nan | :   3%|▎           | 13/500 [00:19<08:52,  1.09s/it]| train_loss: nan | test_loss: nan | reg: nan | :   3%|▎           | 14/500 [00:19<08:25,  1.04s/it]| train_loss: nan | test_loss: nan | reg: nan | :   3%|▎           | 14/500 [00:20<08:25,  1.04s/it]| train_loss: nan | test_loss: nan | reg: nan | :   3%|▎           | 15/500 [00:20<08:06,  1.00s/it]| train_loss: nan | test_loss: nan | reg: nan | :   3%|▎           | 15/500 [00:22<08:06,  1.00s/it]| train_loss: nan | test_loss: nan | reg: nan | :   3%|▍           | 16/500 [00:22<09:57,  1.23s/it]| train_loss: nan | test_loss: nan | reg: nan | :   3%|▍           | 16/500 [00:23<09:57,  1.23s/it]| train_loss: nan | test_loss: nan | reg: nan | :   3%|▍           | 17/500 [00:23<09:10,  1.14s/it]| train_loss: nan | test_loss: nan | reg: nan | :   3%|▍           | 17/500 [00:24<09:10,  1.14s/it]| train_loss: nan | test_loss: nan | reg: nan | :   4%|▍           | 18/500 [00:24<08:36,  1.07s/it]| train_loss: nan | test_loss: nan | reg: nan | :   4%|▍           | 18/500 [00:25<08:36,  1.07s/it]| train_loss: nan | test_loss: nan | reg: nan | :   4%|▍           | 19/500 [00:25<08:13,  1.03s/it]| train_loss: nan | test_loss: nan | reg: nan | :   4%|▍           | 19/500 [00:25<08:13,  1.03s/it]| train_loss: nan | test_loss: nan | reg: nan | :   4%|▍           | 20/500 [00:25<07:57,  1.01it/s]| train_loss: nan | test_loss: nan | reg: nan | :   4%|▍           | 20/500 [00:27<07:57,  1.01it/s]| train_loss: nan | test_loss: nan | reg: nan | :   4%|▌           | 21/500 [00:27<09:47,  1.23s/it]| train_loss: nan | test_loss: nan | reg: nan | :   4%|▌           | 21/500 [00:28<09:47,  1.23s/it]| train_loss: nan | test_loss: nan | reg: nan | :   4%|▌           | 22/500 [00:28<09:02,  1.13s/it]| train_loss: nan | test_loss: nan | reg: nan | :   4%|▌           | 22/500 [00:29<09:02,  1.13s/it]| train_loss: nan | test_loss: nan | reg: nan | :   5%|▌           | 23/500 [00:29<08:30,  1.07s/it]| train_loss: nan | test_loss: nan | reg: nan | :   5%|▌           | 23/500 [00:30<08:30,  1.07s/it]| train_loss: nan | test_loss: nan | reg: nan | :   5%|▌           | 24/500 [00:30<08:07,  1.02s/it]| train_loss: nan | test_loss: nan | reg: nan | :   5%|▌           | 24/500 [00:31<08:07,  1.02s/it]| train_loss: nan | test_loss: nan | reg: nan | :   5%|▌           | 25/500 [00:31<07:51,  1.01it/s]| train_loss: nan | test_loss: nan | reg: nan | :   5%|▌           | 25/500 [00:33<07:51,  1.01it/s]| train_loss: nan | test_loss: nan | reg: nan | :   5%|▌           | 26/500 [00:33<09:41,  1.23s/it]| train_loss: nan | test_loss: nan | reg: nan | :   5%|▌           | 26/500 [00:34<09:41,  1.23s/it]| train_loss: nan | test_loss: nan | reg: nan | :   5%|▋           | 27/500 [00:34<08:56,  1.13s/it]| train_loss: nan | test_loss: nan | reg: nan | :   5%|▋           | 27/500 [00:34<08:56,  1.13s/it]| train_loss: nan | test_loss: nan | reg: nan | :   6%|▋           | 28/500 [00:34<08:24,  1.07s/it]| train_loss: nan | test_loss: nan | reg: nan | :   6%|▋           | 28/500 [00:35<08:24,  1.07s/it]| train_loss: nan | test_loss: nan | reg: nan | :   6%|▋           | 29/500 [00:35<08:01,  1.02s/it]| train_loss: nan | test_loss: nan | reg: nan | :   6%|▋           | 29/500 [00:36<08:01,  1.02s/it]| train_loss: nan | test_loss: nan | reg: nan | :   6%|▋           | 30/500 [00:36<07:45,  1.01it/s]| train_loss: nan | test_loss: nan | reg: nan | :   6%|▋           | 30/500 [00:38<07:45,  1.01it/s]| train_loss: nan | test_loss: nan | reg: nan | :   6%|▋           | 31/500 [00:38<09:34,  1.22s/it]| train_loss: nan | test_loss: nan | reg: nan | :   6%|▋           | 31/500 [00:38<09:48,  1.26s/it]
+[W 2025-02-06 22:16:57,642] Trial 0 failed with parameters: {'lr': 0.027707636401262108, 'lambda': 0.0007765084377522407, 'lambda_l1': 4, 'lambda_entropy': 2} because of the following error: OutOfMemoryError('CUDA out of memory. Tried to allocate 4.91 GiB. GPU 0 has a total capacity of 39.50 GiB of which 467.38 MiB is free. Including non-PyTorch memory, this process has 39.03 GiB memory in use. Of the allocated memory 28.31 GiB is allocated by PyTorch, and 10.19 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)').
+Traceback (most recent call last):
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/.venv/lib64/python3.9/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/training/mnist/kan_mnist_hp_optim.py", line 63, in objective
+    train_data = ut.train_model(
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/training/utils.py", line 172, in train_model
+    loss = model.fit(dataset, opt=train_data['optimizer'], metrics=(train_acc, test_acc),
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/pykan_repo/kan/MultKAN.py", line 1574, in fit
+    loss.backward()
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/.venv/lib64/python3.9/site-packages/torch/_tensor.py", line 581, in backward
+    torch.autograd.backward(
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/.venv/lib64/python3.9/site-packages/torch/autograd/__init__.py", line 347, in backward
+    _engine_run_backward(
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/.venv/lib64/python3.9/site-packages/torch/autograd/graph.py", line 825, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 4.91 GiB. GPU 0 has a total capacity of 39.50 GiB of which 467.38 MiB is free. Including non-PyTorch memory, this process has 39.03 GiB memory in use. Of the allocated memory 28.31 GiB is allocated by PyTorch, and 10.19 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[W 2025-02-06 22:16:57,651] Trial 0 failed with value None.
+Traceback (most recent call last):
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/training/mnist/kan_mnist_hp_optim.py", line 83, in <module>
+    study.optimize(objective, n_trials=50)
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/.venv/lib64/python3.9/site-packages/optuna/study/study.py", line 475, in optimize
+    _optimize(
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/.venv/lib64/python3.9/site-packages/optuna/study/_optimize.py", line 63, in _optimize
+    _optimize_sequential(
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/.venv/lib64/python3.9/site-packages/optuna/study/_optimize.py", line 160, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/.venv/lib64/python3.9/site-packages/optuna/study/_optimize.py", line 248, in _run_trial
+    raise func_err
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/.venv/lib64/python3.9/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/training/mnist/kan_mnist_hp_optim.py", line 63, in objective
+    train_data = ut.train_model(
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/training/utils.py", line 172, in train_model
+    loss = model.fit(dataset, opt=train_data['optimizer'], metrics=(train_acc, test_acc),
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/pykan_repo/kan/MultKAN.py", line 1574, in fit
+    loss.backward()
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/.venv/lib64/python3.9/site-packages/torch/_tensor.py", line 581, in backward
+    torch.autograd.backward(
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/.venv/lib64/python3.9/site-packages/torch/autograd/__init__.py", line 347, in backward
+    _engine_run_backward(
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/.venv/lib64/python3.9/site-packages/torch/autograd/graph.py", line 825, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 4.91 GiB. GPU 0 has a total capacity of 39.50 GiB of which 467.38 MiB is free. Including non-PyTorch memory, this process has 39.03 GiB memory in use. Of the allocated memory 28.31 GiB is allocated by PyTorch, and 10.19 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-02-06 22:16:58: Training done
+
+2025-02-06 22:16:58: END OF SCRIPT REACHED

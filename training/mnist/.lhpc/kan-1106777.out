@@ -1,0 +1,26 @@
+Starting at Tue Feb 18 05:19:31 PM CET 2025
+Running on hosts: cg18
+Running on 1 nodes.
+Running on 1 processors.
+SLURM JobID 1106777 processors.
+Node has 32 processors.
+Node has  total memory.
+Node has 5300 memory per cpu.
+Current working directory is /lunarc/nobackup/projects/lu2024-17-38/fu6315ma/training/mnist
+Current path is /lunarc/nobackup/projects/lu2024-17-38/fu6315ma/.venv/bin:/sw/pkg/gfxlauncher:/home/fu6315ma/.vscode-server/cli/servers/Stable-cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/server/bin/remote-cli:/sw/pkg/gfxlauncher:/home/fu6315ma/.local/bin:/home/fu6315ma/bin:/sw/pkg/gfxlauncher:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:.:/sw/pkg/lunarc/bin:/sw/pkg/slurm/local/bin:/opt/thinlinc/bin:/opt/thinlinc/sbin:.:/sw/pkg/lunarc/bin:/sw/pkg/slurm/local/bin:/home/fu6315ma/.vscode-server/extensions/ms-python.debugpy-2025.0.1-linux-x64/bundled/scripts/noConfigScripts:.:/sw/pkg/lunarc/bin:/sw/pkg/slurm/local/bin
+2025-02-18 17:19:31: Script started (directory: /lunarc/nobackup/projects/lu2024-17-38/fu6315ma/training/mnist)\n
+Traceback (most recent call last):
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/behavioral/effkan_lib_inf.py", line 29, in <module>
+    model.init_from_statedict("../training/mnist/weights/eff_kan_2025-02-13_15-04-15_state.pth")
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/efficient-kan/src/efficient_kan/kan.py", line 332, in init_from_statedict
+    params = torch.load(state_dict_file)
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/.venv/lib64/python3.9/site-packages/torch/serialization.py", line 1425, in load
+    with _open_file_like(f, "rb") as opened_file:
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/.venv/lib64/python3.9/site-packages/torch/serialization.py", line 751, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/.venv/lib64/python3.9/site-packages/torch/serialization.py", line 732, in __init__
+    super().__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: '../training/mnist/weights/eff_kan_2025-02-13_15-04-15_state.pth'
+2025-02-18 17:19:47: Script done
+
+2025-02-18 17:19:47: END OF SCRIPT REACHED

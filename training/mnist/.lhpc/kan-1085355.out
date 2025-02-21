@@ -1,0 +1,71 @@
+Starting at Thu Feb  6 10:13:26 PM CET 2025
+Running on hosts: cg18
+Running on 1 nodes.
+Running on 1 processors.
+SLURM JobID 1085355 processors.
+Node has 32 processors.
+Node has  total memory.
+Node has 5300 memory per cpu.
+Current working directory is /lunarc/nobackup/projects/lu2024-17-38/fu6315ma/training/mnist
+Current path is /lunarc/nobackup/projects/lu2024-17-38/fu6315ma/.venv/bin:/sw/pkg/gfxlauncher:/home/fu6315ma/.vscode-server/cli/servers/Stable-cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/server/bin/remote-cli:/sw/pkg/gfxlauncher:/home/fu6315ma/.local/bin:/home/fu6315ma/bin:/sw/pkg/gfxlauncher:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:~/bin:.:/sw/pkg/lunarc/bin:/sw/pkg/slurm/local/bin:/opt/thinlinc/bin:/opt/thinlinc/sbin:~/bin:.:/sw/pkg/lunarc/bin:/sw/pkg/slurm/local/bin:~/bin:.:/sw/pkg/lunarc/bin:/sw/pkg/slurm/local/bin
+2025-02-06 22:13:26: Training started (directory: /lunarc/nobackup/projects/lu2024-17-38/fu6315ma/training/mnist)\n
+cuda
+Train:  torch.Size([60000, 784]) torch.Size([60000, 10])
+Test:  torch.Size([10000, 784]) torch.Size([10000, 10])
+[I 2025-02-06 22:13:37,832] A new study created in memory with name: no-name-5d9f0123-55b2-47f9-bc87-73b9666ce49f
+checkpoint directory created: ./model
+saving model version 0.0
+Trial 0: {'lr': 0.0280785531318768, 'lambda': 0.00014878486703317725, 'lambda_l1': 4, 'lambda_entropy': 2}
+description:   0%|                                                          | 0/500 [00:00<?, ?it/s]lstsq failed
+description:   0%|                                                          | 0/500 [00:04<?, ?it/s]
+[W 2025-02-06 22:13:42,947] Trial 0 failed with parameters: {'lr': 0.0280785531318768, 'lambda': 0.00014878486703317725, 'lambda_l1': 4, 'lambda_entropy': 2} because of the following error: UnboundLocalError("local variable 'coef' referenced before assignment").
+Traceback (most recent call last):
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/.venv/lib64/python3.9/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/training/mnist/kan_mnist_hp_optim.py", line 63, in objective
+    train_data = ut.train_model(
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/training/utils.py", line 172, in train_model
+    loss = model.fit(dataset, opt=train_data['optimizer'], metrics=(train_acc, test_acc),
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/pykan_repo/kan/MultKAN.py", line 1555, in fit
+    self.update_grid(dataset['train_input'][train_id])
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/pykan_repo/kan/MultKAN.py", line 717, in update_grid
+    self.update_grid_from_samples(x)
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/pykan_repo/kan/MultKAN.py", line 711, in update_grid_from_samples
+    self.act_fun[l].update_grid_from_samples(self.acts[l])
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/pykan_repo/kan/KANLayer.py", line 220, in update_grid_from_samples
+    self.coef.data = curve2coef(x_pos, y_eval, self.grid, self.k)
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/pykan_repo/kan/spline.py", line 137, in curve2coef
+    return coef
+UnboundLocalError: local variable 'coef' referenced before assignment
+[W 2025-02-06 22:13:42,951] Trial 0 failed with value None.
+Traceback (most recent call last):
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/training/mnist/kan_mnist_hp_optim.py", line 83, in <module>
+    study.optimize(objective, n_trials=50)
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/.venv/lib64/python3.9/site-packages/optuna/study/study.py", line 475, in optimize
+    _optimize(
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/.venv/lib64/python3.9/site-packages/optuna/study/_optimize.py", line 63, in _optimize
+    _optimize_sequential(
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/.venv/lib64/python3.9/site-packages/optuna/study/_optimize.py", line 160, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/.venv/lib64/python3.9/site-packages/optuna/study/_optimize.py", line 248, in _run_trial
+    raise func_err
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/.venv/lib64/python3.9/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/training/mnist/kan_mnist_hp_optim.py", line 63, in objective
+    train_data = ut.train_model(
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/training/utils.py", line 172, in train_model
+    loss = model.fit(dataset, opt=train_data['optimizer'], metrics=(train_acc, test_acc),
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/pykan_repo/kan/MultKAN.py", line 1555, in fit
+    self.update_grid(dataset['train_input'][train_id])
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/pykan_repo/kan/MultKAN.py", line 717, in update_grid
+    self.update_grid_from_samples(x)
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/pykan_repo/kan/MultKAN.py", line 711, in update_grid_from_samples
+    self.act_fun[l].update_grid_from_samples(self.acts[l])
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/pykan_repo/kan/KANLayer.py", line 220, in update_grid_from_samples
+    self.coef.data = curve2coef(x_pos, y_eval, self.grid, self.k)
+  File "/lunarc/nobackup/projects/lu2024-17-38/fu6315ma/pykan_repo/kan/spline.py", line 137, in curve2coef
+    return coef
+UnboundLocalError: local variable 'coef' referenced before assignment
+2025-02-06 22:13:43: Training done
+
+2025-02-06 22:13:43: END OF SCRIPT REACHED
