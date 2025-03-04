@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64; rv:135.0) Gecko/20100101 Firefox/135.0" version="26.0.16">
   <diagram name="Quantization Model" id="dlWvExXdN6xlSllNkRNf">
-    <mxGraphModel dx="989" dy="610" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1434" dy="885" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -34,16 +34,13 @@
         <mxCell id="1-Zycqq-4m_5n2CwUNeE-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#7EA6E0;strokeColor=#7EA6E0;" parent="1-Zycqq-4m_5n2CwUNeE-46" source="1-Zycqq-4m_5n2CwUNeE-3" target="1-Zycqq-4m_5n2CwUNeE-6" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="1-Zycqq-4m_5n2CwUNeE-11" value="24" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#7EA6E0;" parent="1-Zycqq-4m_5n2CwUNeE-7" vertex="1" connectable="0">
+        <mxCell id="1-Zycqq-4m_5n2CwUNeE-11" value="&lt;div&gt;&amp;lt;24&amp;gt;&lt;/div&gt;&lt;div&gt;fp32&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#7EA6E0;" parent="1-Zycqq-4m_5n2CwUNeE-7" vertex="1" connectable="0">
           <mxGeometry x="-0.0071" y="-2" relative="1" as="geometry">
             <mxPoint x="-4" y="-2" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="N54vBY2K6-ZTS9FRE-be-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1-Zycqq-4m_5n2CwUNeE-46" source="1-Zycqq-4m_5n2CwUNeE-3" target="1-Zycqq-4m_5n2CwUNeE-5">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="1-Zycqq-4m_5n2CwUNeE-3" value="&lt;div&gt;Layer-1 FP32&lt;/div&gt;&lt;div&gt;&amp;nbsp;&lt;/div&gt;&lt;div&gt;[784, 24]&lt;/div&gt;" style="whiteSpace=wrap;html=1;fontColor=#7EA6E0;strokeColor=#7EA6E0;" parent="1-Zycqq-4m_5n2CwUNeE-46" vertex="1">
-          <mxGeometry x="259" y="60" width="120" height="90" as="geometry" />
+          <mxGeometry x="283" y="60" width="91" height="90" as="geometry" />
         </mxCell>
         <mxCell id="1-Zycqq-4m_5n2CwUNeE-4" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#67AB9F;strokeColor=#67AB9F;" parent="1-Zycqq-4m_5n2CwUNeE-46" target="1-Zycqq-4m_5n2CwUNeE-3" edge="1">
           <mxGeometry width="100" relative="1" as="geometry">
@@ -52,7 +49,7 @@
             <Array as="points" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="1-Zycqq-4m_5n2CwUNeE-8" value="&amp;lt;784&amp;gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#67AB9F;" parent="1-Zycqq-4m_5n2CwUNeE-4" vertex="1" connectable="0">
+        <mxCell id="1-Zycqq-4m_5n2CwUNeE-8" value="&lt;div&gt;&amp;lt;784&amp;gt;&lt;/div&gt;&lt;div&gt;fp32&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#67AB9F;" parent="1-Zycqq-4m_5n2CwUNeE-4" vertex="1" connectable="0">
           <mxGeometry x="-0.2333" y="-1" relative="1" as="geometry">
             <mxPoint y="-1" as="offset" />
           </mxGeometry>
@@ -65,13 +62,13 @@
             <mxPoint x="589" y="105" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="1-Zycqq-4m_5n2CwUNeE-10" value="&amp;lt;10&amp;gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#B5739D;" parent="1-Zycqq-4m_5n2CwUNeE-9" vertex="1" connectable="0">
+        <mxCell id="1-Zycqq-4m_5n2CwUNeE-10" value="&lt;div&gt;&amp;lt;10&amp;gt;&lt;/div&gt;&lt;div&gt;fp32&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#B5739D;" parent="1-Zycqq-4m_5n2CwUNeE-9" vertex="1" connectable="0">
           <mxGeometry x="-0.1008" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="1-Zycqq-4m_5n2CwUNeE-6" value="&lt;div&gt;Layer-2 FP32&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;[24,10]&lt;/div&gt;" style="whiteSpace=wrap;html=1;fontColor=#B5739D;strokeColor=#B5739D;" parent="1-Zycqq-4m_5n2CwUNeE-46" vertex="1">
-          <mxGeometry x="419" y="60" width="120" height="90" as="geometry" />
+          <mxGeometry x="420" y="60" width="79" height="90" as="geometry" />
         </mxCell>
         <mxCell id="1-Zycqq-4m_5n2CwUNeE-2" value="Actual Model" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="40" y="40" width="100" height="30" as="geometry" />
