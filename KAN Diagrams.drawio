@@ -49,7 +49,7 @@
             <Array as="points" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="1-Zycqq-4m_5n2CwUNeE-8" value="&lt;div&gt;&amp;lt;784&amp;gt;&lt;/div&gt;&lt;div&gt;fp32&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#67AB9F;" parent="1-Zycqq-4m_5n2CwUNeE-4" vertex="1" connectable="0">
+        <mxCell id="1-Zycqq-4m_5n2CwUNeE-8" value="&lt;div&gt;&amp;lt;784&amp;gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#67AB9F;" parent="1-Zycqq-4m_5n2CwUNeE-4" vertex="1" connectable="0">
           <mxGeometry x="-0.2333" y="-1" relative="1" as="geometry">
             <mxPoint y="-1" as="offset" />
           </mxGeometry>
