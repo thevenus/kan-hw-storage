@@ -127,12 +127,12 @@
         <mxCell id="1-Zycqq-4m_5n2CwUNeE-24" value="&lt;div&gt;Requantize&lt;/div&gt;&lt;div&gt;FP32-&amp;gt;INT8&lt;/div&gt;&lt;div&gt;[-2, 2], b=8&lt;/div&gt;" style="whiteSpace=wrap;html=1;fontColor=#B5739D;strokeColor=#B5739D;" parent="1" vertex="1">
           <mxGeometry x="429" y="455" width="80" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="1-Zycqq-4m_5n2CwUNeE-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="1-Zycqq-4m_5n2CwUNeE-29" edge="1">
+        <mxCell id="1-Zycqq-4m_5n2CwUNeE-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#B5739D;" parent="1" source="1-Zycqq-4m_5n2CwUNeE-29" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="709" y="485" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="1-Zycqq-4m_5n2CwUNeE-36" value="&lt;div&gt;&amp;lt;10&amp;gt;&lt;/div&gt;&lt;div&gt;fp32&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="1-Zycqq-4m_5n2CwUNeE-35" vertex="1" connectable="0">
+        <mxCell id="1-Zycqq-4m_5n2CwUNeE-36" value="&lt;div&gt;&amp;lt;10&amp;gt;&lt;/div&gt;&lt;div&gt;fp32&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#B5739D;" parent="1-Zycqq-4m_5n2CwUNeE-35" vertex="1" connectable="0">
           <mxGeometry x="-0.1135" y="-1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
